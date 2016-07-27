@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.os.Handler;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.FrameLayout;
@@ -33,6 +34,8 @@ public class LoginButton extends FrameLayout{
         final String text = ta.getString(R.styleable.LoginButton_text);
         final int otherColor = ta.getColor(R.styleable.LoginButton_otherColor, 0);
         final Drawable icon = ta.getDrawable(R.styleable.LoginButton_otherIcon);
+
+        //this.setBackgroundColor(ContextCompat.getDrawable());
 
         ta.recycle();
         if(text!=null){
