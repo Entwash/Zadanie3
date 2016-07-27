@@ -19,6 +19,8 @@ public class LoginManager {
                     mLoginListener.loginSuccess();
                 }
             }, 750);
+
+
         }else {
             new Handler().postDelayed(new Runnable() {
                 @Override

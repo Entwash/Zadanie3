@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="vertical"
+    android:id="@+id/login_button">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_base"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/base_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorAccent"/>
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_success"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorSuccess"
+        android:orientation="vertical"
+        android:visibility="invisible">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:src="@drawable/ic_check_black_24dp"
+            android:id="@+id/success_imageView" />
+
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_failure"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorError"
+        android:orientation="vertical"
+        android:visibility="invisible">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:src="@drawable/ic_warning_black_24dp"
+            android:id="@+id/failure_imageView" />
+
+    </FrameLayout>
+</merge>
+
+

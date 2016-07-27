@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -24,7 +25,14 @@
 
     </android.support.design.widget.TextInputLayout>
 
-
+    <pl.droidsononroids.coolloginbutton.view.LoginButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/interactiveButton"
+        app:text="@string/app_name"
+        app:otherColor="@color/otherColor"
+        app:otherIcon="@drawable/ic_done_all_black_24dp"/>
     <!--Miejsce na twój button (wysokość = 56dp)-->
 
 </android.support.design.widget.CoordinatorLayout>
